@@ -6,5 +6,8 @@ package com.example.java8.lambad;
 public class Demo {
     public static void main(String[] args) {
         System.out.println("hello");
+
+
+
     }
 }
