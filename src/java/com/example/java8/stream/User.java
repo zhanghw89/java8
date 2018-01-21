@@ -10,11 +10,22 @@ import lombok.Data;
 
 @Data
 public class User {
+    public User() {
+    }
+
+    public User(String name, String city) {
+        this.name = name;
+        this.city = city;
+    }
+
+    private String name;
+
+    private int age;
 
     private String city;
 
     public boolean isFrom(String city) {
-        Assert.checkNonNull(city,"对象不能为空");
+        Assert.checkNonNull(city, "对象不能为空");
         return city.equals(this.city);
     }
 }
